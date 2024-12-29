@@ -1,0 +1,9 @@
+{
+  "routes": [
+    "/",
+    "/generate_test",
+    "/login",
+    "/signup",
+    "/test"
+  ]
+}
