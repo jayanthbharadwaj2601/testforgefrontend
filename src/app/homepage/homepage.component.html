@@ -1,0 +1,19 @@
+<img src="https://previews.dropbox.com/p/thumb/ACiMFDdq8mo4kegZ3DrrPQpyRSpDOnM5eFC1hQnJUfkyIsaoEIGM6YyI2nIFUblwbEurrWiPpS9dswbsV9OTkz1DUvKZJA6B2bf__JGYimU_IJ5RQ-g0Q6EvZOiZvQkJN0JjSlBizi3LKCq5QJJSBtkSX3idnMWvGqODx9K7Rn0oCRDb9JqhUsYX12TMfd8EHMQe4PHckuo6MgQj_x_JERlMOtAlzRPkoS-G-yiDiwaNNtxiLPWzBydQ5cV9fqXQvnNbrSPBsxwJNdcZK6ModMRvPHVbOmPQ7YwviuiMeDifMnA0mpBuWlPtKjMP8rx42qM/p.jpeg" class="img1" width="100px" height="100px">
+<div class="container">
+       
+    <div class="container1" *ngIf="this.flag==true" >
+<p *ngIf="this.flag==true">{{this.question}}</p>
+<div class="container2">
+<button (click)="reveal_result('a')" *ngIf="this.flag==true" class="button1">a. {{this.oa}}</button>
+<button (click)="reveal_result('b')" *ngIf="this.flag==true" class="button1">b. {{this.ob}}</button>
+</div>
+<div class="container2">
+<button (click)="reveal_result('c')"*ngIf="this.flag==true" class="button1">c. {{this.oc}}</button>
+<button (click)="reveal_result('d')" *ngIf="this.flag==true" class="button1">d. {{this.od}}</button>
+</div>
+</div>
+<p *ngIf="this.flag1==true" class="input1">{{this.result}}</p>
+<button *ngIf="this.flag==true" (click)="execute()" class="button2">next</button>
+<p *ngIf="this.flag2==true" class="input1">{{this.result1}}</p>
+<button  *ngIf="this.flag2==true" (click)="go_back()" class="button2">home</button>
+</div>
